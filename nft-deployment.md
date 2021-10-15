@@ -12,6 +12,9 @@ Don't worry if you don't know how to do these things - we will take you through 
 
 This means you will upload each image or file in your collection to IPFS first. You can use any IPFS gateway to deploy it. The important thing is making sure to store each image hash. This is the hash used to resolve to the image/file, and the one we will use in the JSON file in step 2.
 
+Here is a list of of public gateways:
+https://ipfs.github.io/public-gateway-checker/
+
 ## 2. Creating JSON files
 
 We will now create the JSON files for each image/file you deployed in the previous step. If you have a big collection, chances are that you already have a JSON file for each file in your collection.
