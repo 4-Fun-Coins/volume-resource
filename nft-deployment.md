@@ -53,7 +53,9 @@ The important thing is to have a JSON schema like this:
 // Snippet from https://eips.ethereum.org/EIPS/eip-721#implementations
 ```
 
-It doesn't have to be EXACTLY like this, but the idea is that you describe the varying properties of your NFT. For instance if I have a collection where each image consists of a type of cat with some sort of hat on, my JSON schema might look something like this: 
+An important thing to note is due to the nature of the Volume NFTs you have to include a perk level for each NFT. The levels you can choose from is from 1 - 6 with 1 being common and 6 ultra rare. We encourage you to be careful with which NFTs you assign 6 to since they will be the most valuable in the future ecosystem.
+
+For instance if I have a collection where each image consists of a type of cat with some sort of hat on, my JSON schema might look something like this:
 ```
 {
     "title": "Kitty 1",
@@ -62,6 +64,10 @@ It doesn't have to be EXACTLY like this, but the idea is that you describe the v
         "name": {
             "type": "string",
             "description": "First Kitty"
+        },
+        "perkLevel": {
+            "type": "int8",
+            "description": 3
         },
         "breed": {
             "type": "string",
@@ -87,7 +93,7 @@ You are again welcome to use any IPFS gateway of your choice, just be sure to st
 
 ## Final thoughts
 
-If you are having trouble understanding the deployment and would like to launch a collection through the `Volume INO` please contact the volume team [here](mailto:contact@volume.quest) for assistance.
+If you are having trouble understanding the deployment and would like to launch a collection through the `Volume INO` please don't hesitate to contact the volume team [here](mailto:contact@volume.quest) for assistance.
 
 Resources:
 
